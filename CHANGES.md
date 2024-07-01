@@ -1,3 +1,29 @@
+# Version 0.12.1 BETA
+Released on July 2nd, 2024.
+
+## Summary
+- This intermediate update adds support setting item filters for player and vehicle cargo inventory slots. It also allows automating rocket silo launches and tunes the rail crossing alert. Finally, it fixes a launcher bug that makes the game freeze after configuring it successfully.
+
+## Features
+- Added support for reading and setting item filters for slots in the player inventory and in vehicle cargo inventories.
+  * Press ALT + LEFT BRACKET to set or unset the item filter for the selected inventory slot. 
+  * When setting the filter, the mod prefers to use the item that is in the slot. 
+  * Otherwise, it uses the item in hand. 
+  * If the slot is empty and the hand is empty, then no actions are taken, but in the future there will be support added for using the filter selector menu here.
+  * If any filter is already set, pressing the keybind will unset it, regardless of the item in hand or in the slot.
+
+- Added support for toggling whether rocket silos launch automatically when the rocket is ready and any cargo has been added.
+  * Press "SHIFT + SPACE" or press "CONTROL + SPACE" to toggle this.
+
+## Changes
+  - Modified the activation of the rail crossing alert.
+    * The alert now only checks for the player position and not the cursor position.
+    * The alert now also accounts for when the player is driving a car or tank across rails.
+
+## Bugfixes
+  - Fixed a launcher bug that made the game freeze after successfully generating the config file when it is launched for the first time.
+
+
 # Version 0.12.0 BETA
 Released on June 28th, 2024.
 
